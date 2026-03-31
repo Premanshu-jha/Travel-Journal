@@ -1,5 +1,4 @@
 import './Card.css'
-import LocationIcon from '../assets/LocationIcon.png'
 export default function Card({cardObj}){
     const {title,location,coordinates,startDate,endDate,description,imageUrl} = cardObj;
      return (
@@ -8,7 +7,7 @@ export default function Card({cardObj}){
            <div className="information">
 
              <div className="country">
-               <img src={LocationIcon} className="locationIcon"/>
+               <img src='/LocationIcon.png' className="locationIcon"/>
                <span className="countryName">{location}</span>
                <a href={`https://www.google.com/maps?q=${coordinates}`} target="_blank">View in Google Maps</a>
              </div>
